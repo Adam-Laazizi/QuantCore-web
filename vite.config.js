@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// NOTICE: No Tailwind imports here! Tailwind v3 works automatically via PostCSS.
+// https://vitejs.dev/config/
 export default defineConfig({
+  // This ensures the site loads correctly on GitHub Pages subfolders
+  base: '/QuantCore-web/', 
   plugins: [react()],
 })
